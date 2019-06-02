@@ -45,7 +45,6 @@ public class Client {
 			System.out.println("...");
 			
 			
-			
 			f.channel().closeFuture().sync();
 		} finally {
 			group.shutdownGracefully();
