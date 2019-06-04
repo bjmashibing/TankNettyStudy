@@ -10,9 +10,9 @@ public class TankMsgDecoder extends ByteToMessageDecoder{
 
 	@Override
 	protected void decode(ChannelHandlerContext ctx, ByteBuf in, List<Object> out) throws Exception {
-		if(in.readableBytes()<8) return;
+		if(in.readableBytes()<8) return; //TCP 拆包 粘包的问题
 		
-		in.markReaderIndex();
+		//in.markReaderIndex();
 		
 		int x = in.readInt();
 		int y = in.readInt();

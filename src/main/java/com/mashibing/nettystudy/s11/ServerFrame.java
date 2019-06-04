@@ -15,6 +15,7 @@ public class ServerFrame extends Frame {
 	Button btnStart = new Button("start");
 	TextArea taLeft = new TextArea();
 	TextArea taRight = new TextArea();
+	
 	Server server = new Server();
 	
 	public ServerFrame () {

@@ -68,8 +68,10 @@ class ServerChildHandler extends ChannelInboundHandlerAdapter { //SimpleChannleI
 			buf.getBytes(buf.readerIndex(), bytes);
 			String s = new String(bytes);
 			
+			ServerFrame.INSTANCE.updateClientMsg(s);
+			
 			if(s.equals("_bye_")) {
-				System.out.println("客户端要求退出");
+				ServerFrame.INSTANCE.updateServerMsg("客户端要求退出");
 				Server.clients.remove(ctx.channel());
 				ctx.close();
 			} else {

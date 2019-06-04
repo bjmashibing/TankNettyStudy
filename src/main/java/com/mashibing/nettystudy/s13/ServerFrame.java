@@ -2,6 +2,7 @@ package com.mashibing.nettystudy.s13;
 
 import java.awt.BorderLayout;
 import java.awt.Button;
+import java.awt.Font;
 import java.awt.Frame;
 import java.awt.GridLayout;
 import java.awt.Panel;
@@ -25,6 +26,9 @@ public class ServerFrame extends Frame {
 		p.add(taLeft);
 		p.add(taRight);
 		this.add(p);
+		
+		taLeft.setFont(new Font("verderna",Font.PLAIN, 25));
+		
 		this.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent e) {

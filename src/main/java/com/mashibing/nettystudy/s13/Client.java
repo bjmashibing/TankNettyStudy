@@ -102,7 +102,7 @@ class ClientHandler extends ChannelInboundHandlerAdapter {
 
 	@Override
 	public void channelActive(ChannelHandlerContext ctx) throws Exception {
-		ctx.write(new TankMsg(5, 8));
+		ctx.writeAndFlush(new TankMsg(5, 8));
 	}
 
 }
