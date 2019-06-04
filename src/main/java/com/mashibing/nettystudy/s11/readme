@@ -1,0 +1,4 @@
+加入ServerFrame
+设为单例
+
+添加server的severStart方法，并在成功启动后给出提示

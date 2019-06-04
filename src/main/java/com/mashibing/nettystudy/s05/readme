@@ -1,0 +1,2 @@
+在Client中保存Client对象，窗口显示后调用connect连接，
+处理actionPerformed事件时调用send发送

@@ -1,0 +1,5 @@
+client端接收到channelRead后更新界面
+把ClientFrame做成单例
+在main中显示
+
+ClientHandler接收到数据后更新frame中的ta

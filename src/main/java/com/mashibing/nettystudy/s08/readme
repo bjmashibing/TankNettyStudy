@@ -1,0 +1,2 @@
+Server端的异常处理
+删除clients中保存的channel
